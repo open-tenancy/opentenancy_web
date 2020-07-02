@@ -52,6 +52,7 @@ Potential Pages:
 * Advice (page with chatbot? just the one page ideally, can have a number of starting concerns to guide user (ie rent disputes, council tax, repairs)
 * About - how to use, why we did it
 * FAQ 
+* Get More Help (better name) - redirect to council search page if we're like you should talk to someone!
 
 ## OTHER
 - scalability concerns over large number of users
