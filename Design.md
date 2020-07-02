@@ -7,6 +7,9 @@ Looks nice and modern
 Chatbot style? They put in ideas and it responds?
 Branch style? they go through an interview style until system has enough info to construct answer
 
+Renting:
+-repairs
+-council tax
 
 ## USE CASES
 For a student to find out arbitrary law in terms of renting and how it applies to them
@@ -21,6 +24,15 @@ Examples:
 Currently Troy is having a dispute with the landlord, and is unsure about some specific terms. He has exams coming up
 and doesn't have time to contact a lawyer or read up on his own, but needs to deal with the dispute as soon as possible
 so that his deposit isn't taken away. He is doing a writing course and is unfamiliar with computers.
+He logs onto the app
+Makes an account
+Chooses the repairs category
+- Do you have a contract on hand?
+- yes or no
+- are you a student?
+- yes no etc
+- Is it a joint tenancy?
+- yes no etc
 
 ## SYSTEM REQUIREMENTS
 ### UI
