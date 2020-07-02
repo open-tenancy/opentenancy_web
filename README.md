@@ -1,3 +1,3 @@
-# tenancyRights 
+# openTenancy
 
 coming soon.
