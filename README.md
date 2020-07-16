@@ -3,5 +3,8 @@
 
 coming soon.
 
+## built by
+[Amy Conroy](https://github.com/amyconroy) | [Anastasia Shmyglia](https://github.com/a-shmyg)
+
 ## built with 
 [Gatsby Starter Business](https://github.com/v4iv/gatsby-starter-business) | [Gatsby](https://www.gatsbyjs.org) | [Netlify CMS](https://www.netlifycms.org) | [Docassemble](https://docassemble.org)
