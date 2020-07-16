@@ -27,7 +27,7 @@ const HomePageTemplate = ({
                 <h1 className='title'>
                   <h1>Welcome to </h1>
                   {title}
-                  <button id="letschat" class="button ml-5 is-link is-large is-full-width">Let's Chat</button>
+                  <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a href="http://localhost:80">Let's Chat</a></button>
                 </h1>
               </div>
             </div>
