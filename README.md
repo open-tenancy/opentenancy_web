@@ -4,4 +4,4 @@
 coming soon.
 
 ## built with 
-[Gatsby Starter Business](https://github.com/v4iv/gatsby-starter-business) | [Gatsby](https://www.gatsbyjs.org) | [Netlify CMS](https://www.netlifycms.org)| [Docassemble](https://docassemble.org)
+[Gatsby Starter Business](https://github.com/v4iv/gatsby-starter-business) | [Gatsby](https://www.gatsbyjs.org) | [Netlify CMS](https://www.netlifycms.org) | [Docassemble](https://docassemble.org)
