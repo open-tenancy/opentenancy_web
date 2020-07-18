@@ -43,10 +43,12 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
+                 <center>
+                      <h3 className='has-text-weight-semibold is-size-2'>
+                        {heading}
+                      </h3>
+                      <p>{description}</p>
+                   </center> 
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
                 <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
