@@ -75,7 +75,7 @@ const ContactForm = () => {
             <button className='button' type='reset'>Clear</button>
           </div>
           <div className='control'>
-            <button className='button is-primary' type='submit' disabled={isSubmitting}>Submit</button>
+            <button className='button is-warning' type='submit' disabled={isSubmitting}>Submit</button>
           </div>
         </div>
       </form>)}

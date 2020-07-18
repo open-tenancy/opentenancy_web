@@ -45,7 +45,7 @@ export default class BlogPage extends Component {
             {JSON.stringify(websiteSchemaOrgJSONLD)}
           </script>
         </Helmet>
-        <section className='hero is-primary is-bold'>
+        <section className='hero is-warning is-medium is-bold'>
           <div className='hero-body'>
             <div className='container'>
               <div className='columns'>
