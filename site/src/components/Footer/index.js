@@ -6,6 +6,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='container'>
         <div className='content has-text-centered'>
+          
           <p>
             {config.copyright}
           </p>
