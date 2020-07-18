@@ -18,14 +18,16 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-primary is-bold is-medium'>
+    <section className='hero is-warning is-bold is-large'>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <h1 className='title'>
+                  <h1>Welcome to </h1>
                   {title}
+                  <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a href="http://localhost:80">Let's Chat</a></button>
                 </h1>
               </div>
             </div>
@@ -41,10 +43,12 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
+                 <center>
+                      <h3 className='has-text-weight-semibold is-size-2'>
+                        {heading}
+                      </h3>
+                      <p>{description}</p>
+                   </center> 
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
                 <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
