@@ -26,8 +26,7 @@ const HomePageTemplate = ({
                     Welcome to 
                       <div id = 'companyname'>
                         openTenancy  
-                        <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a href="http://localhost:80">Let's Chat</a></button>
-                  
+                        <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a id = 'letschatbutt' href="http://localhost:80">Let's Chat</a></button>
                   </div>
                 </div>
               </div>
