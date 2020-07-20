@@ -23,10 +23,11 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <div id='maintitle'>
-                  Welcome to 
-                    <div id = 'companyname'>
-                      openTenancy  
-                      <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a href="http://localhost:80">Let's Chat</a></button>
+                    Welcome to 
+                      <div id = 'companyname'>
+                        openTenancy  
+                        <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a href="http://localhost:80">Let's Chat</a></button>
+                  
                   </div>
                 </div>
               </div>
