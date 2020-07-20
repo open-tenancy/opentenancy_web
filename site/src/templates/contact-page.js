@@ -21,7 +21,7 @@ const ContactPage = ({ data }) => {
 ContactPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+      frontmatter: PropTypes.object
     }),
   }),
 }
@@ -36,7 +36,6 @@ export const contactPageQuery = graphql`
         subtitle
         meta_title
         meta_description
-        heading
       }
     }
   }

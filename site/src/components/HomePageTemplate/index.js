@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
-import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
@@ -11,7 +10,6 @@ const HomePageTemplate = ({
   offerings,
   meta_title,
   meta_description,
-  testimonials,
 }) => (
   <div>
     <Helmet>
@@ -24,11 +22,13 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <h1 className='title'>
-                  <h1>Welcome to </h1>
-                  {title}
-                  <button id="letschat" class="button ml-5 is-link is-large is-full-width"><a href="http://localhost:80">Let's Chat</a></button>
-                </h1>
+                <div id='maintitle'>
+                    Welcome to 
+                      <div id = 'companyname'>
+                      openTenancy  
+                        <button id="letschat" class="button ml-5  is-dark is-link  is-large is-rounded is-inverted is-full-width"><a id = 'letschatbutt' href="http://localhost:80">Let's Chat</a></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -51,8 +51,6 @@ const HomePageTemplate = ({
                    </center> 
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
               </div>
             </div>
           </div>
@@ -70,9 +68,7 @@ HomePageTemplate.propTypes = {
   description: PropTypes.string,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
-
+  })
 }
 
 export default HomePageTemplate
