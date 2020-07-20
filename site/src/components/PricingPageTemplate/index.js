@@ -50,7 +50,7 @@ const PricingPageTemplate = ({
 )
 
 PricingPageTemplate.propTypes = {
-  title: PropTypes.string,
+  title: 'Get Advice',
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   pricing: PropTypes.shape({
