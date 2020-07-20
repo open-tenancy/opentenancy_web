@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
-import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
@@ -11,7 +10,6 @@ const HomePageTemplate = ({
   offerings,
   meta_title,
   meta_description,
-  testimonials,
 }) => (
   <div>
     <Helmet>
@@ -51,8 +49,6 @@ const HomePageTemplate = ({
                    </center> 
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
               </div>
             </div>
           </div>
@@ -70,9 +66,7 @@ HomePageTemplate.propTypes = {
   description: PropTypes.string,
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
-
+  })
 }
 
 export default HomePageTemplate
