@@ -1,0 +1,162 @@
+include: 
+  welcome.yml
+---
+mandatory: True
+code: |
+  if repairs_start: 
+    if sevenyears: 
+      if repairtype == 'damp':
+        damp_start
+    else: 
+      sorry
+  else:
+    verbal_tenancy
+---
+id: repairs_start
+question: |
+  So you have a repairs issue! We're going to ask you a few questions to give you the best possible advice.
+subquestion: |
+  Do you have a written tenancy agreement (a contract between you and your landlord)?
+field: repairs_start
+yesno: repairs_start
+--- 
+id: tenancylength
+question: | 
+  That's great that you have a written contract. Is your tenancy less than 7 years or is it a periodic tenancy?   
+field: tenancy_length
+yesno: sevenyears
+under: |
+  A periodic tenancy means that it rolls over on either a weekly or monthly basis and has no fixed end date. It doesn't necessarily have to have started as a periodic tenancy, but could have rolled over at the end of a fixed term contract. 
+---
+id: sorry
+question: |
+  As your tenancy is longer than 7 years it sounds like you do not have any rights for reapirs under the Landlord and Tenant Act 1985.
+subquestion: |
+  This means that you are likely to be responsible for those those repairs unless your tenancy agreement says otherwise. 
+field: sorry
+choices:
+  - Start Again: disclaimer_question
+  - Exit: exit
+---
+question: |
+  Select below which category best describes the type of repair that you need advice for. 
+field: repairtype
+choices: 
+  - INTERIOR; Repair relating to the supply of gas, electricity, sanitation, space heating and heating water, or water : interior
+    help: This includes things like boilers, radiators, water tanks, baths, sinks, and the pipes for gas and water, as well as electric sockets and wiring throughout the property. 
+  - EXTERIOR; Repair relating to a structural problem for the property : exterior
+    help: This might include damage such as exterior walls, structural problems to windows and doors, the roof, as well as drains and exterior pipes.
+  - FURNITURE; Repair relating to any furniture in the property : furniture
+  - ELECTRICAL; Repair relating to electrical appliances : electrical
+  - DECORATION; Repair relating to decoration for the property : decoration
+  - DAMP or MOULD; Repair relating to dampness or mould : damp
+  - OTHER; Any other type of repair : other
+---
+question: |
+  Have you told your landlord about your damp or mould issue? 
+field: damp_start
+yesno: damp_start
+---
+mandatory: True
+code: |
+  if damp_start: 
+    landlord_answer
+  else: 
+    report_landlord
+--- 
+question: |
+  Has your landlord responded to your repair request? 
+field: landlord_answer
+yesno: landlord_answer
+---
+mandatory: True
+code: |
+  if landlord_answer: 
+    check_response
+  else: 
+    check_date
+    if deadline_passed:
+      if not check_responsibility:
+        if health_noresponse: 
+          local_authority
+          if council: 
+            next_steps
+          else: 
+            council_contact
+      else: 
+         responsible
+         if health: 
+           local_authority
+           if council: 
+              next_steps
+           else: 
+              council_contact
+    else:
+      deadline_upcoming
+---
+question: |
+  In order to ensure that your landlord is aware that there is a damp or mould issue, it is suggested that you first contact your landlord to let them know. 
+subquestion: |
+  Your landlord must respond to you within 14 days if your tenancy began after 1st October 2015, they must also state what action they are going to take. 
+field: report_landlord
+sets: all_done
+---
+question: |
+  When did you talk to your landlord about your repairs? 
+fields: 
+  - Date: check_date
+    datatype: date
+---
+mandatory: True
+code: |
+  response_deadline = check_date.plus(days = 14)
+  today = today()
+  if today > response_deadline: 
+    deadline_passed = True
+  else: 
+    deadline_passed = False
+--- 
+mandatory: True
+field: deadline_gone
+question: |
+  Your response was already due. Your landlord has 14 days to respond. 
+subquestion: |
+  Does the damp or mould affect your health? 
+yesno: health_noresponse
+---
+field: check_responsibility
+question: |
+  Your landlord has to make sure that your house is safe for you to live in.
+subquestion: |
+  However, this right may be affected if you are responsible for causing the damp or mould. This may be by not looking after the house correctly, like not turning the extractor fan on after showering. Was the damp or mould caused by yourself?
+yesno: check_responsibility
+---
+field: next_steps
+question: | 
+   At this point you have contacted your landlord and waited 14 days and also attempted to get help through the council. 
+subquestion: |
+  We recommend either filing a complaint with your local council if you were not happy with their decision and ask them to look at their decision once more. This could be helpful if you think that they did not give enough care to look at your porblem. However, you can also contact your nearest Citizens Advice as a next step. 
+sets: all_done
+---
+field: local_authority
+question: | 
+  If the problem is affecting your health and you have not received an appropriate response from your landlord (for example, explaining how or when they will fix the issue) within 14 days, we would recommend contacting the Environmental Health department at your local council. 
+subquestion: |
+  However, it is important to note that your landlord may try to evict you if you complain. If you have a tenancy that started after 1 October 2015 then you would have protection against being evicted. Have you attempted to contact the council? 
+yesno: council
+---
+field: council_contact
+question: |
+  We would recommend that you contact your the Environmental Health department at your local council since the mould is affect your health and you have attempted to contact your landlord and have it fixed, as well as waited the necessary 14 days. 
+sets: all_done
+---
+field: responsible
+question: | 
+  Even though you are responsible for the cause of the damp or mould, if it is affecting your health then your landlord still must ensure that it is fixed in an appropriate amount of time. 
+subquestion: |
+  Is the damp or mould affecting your health? 
+yesno: health
+---
+field: all_done
+code: |
+  command('exit')
