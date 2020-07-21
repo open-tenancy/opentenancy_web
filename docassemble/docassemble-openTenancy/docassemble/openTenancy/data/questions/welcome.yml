@@ -1,6 +1,3 @@
-include: 
-  - repairs.yml
----
 metadata:
   title: |
     openTenancy 
@@ -66,4 +63,6 @@ event: legal_clarity
 choices:
   - Start Again: disclaimer_question
   - Exit: exit
-  
+---
+include: 
+  - repairs.yml

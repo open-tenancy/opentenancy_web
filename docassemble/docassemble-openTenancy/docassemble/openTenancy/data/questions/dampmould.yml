@@ -25,12 +25,9 @@ code: |
         if health_noresponse: 
           if council: 
             next_steps
-          else: 
-            council_contact
         else: 
          responsible
          if health: 
-           local_authority
            if council: 
               next_steps
            else: 
@@ -65,9 +62,9 @@ code: |
 mandatory: True
 field: deadline_gone
 question: |
-  Your response was already due. Your landlord has 14 days to respond. 
+  Your landlord should have responded by now. They should respond within 14 days.
 subquestion: |
-  Does the damp or mould affect your health? 
+  Does the damp or mould in your rented home affect your health?
 yesno: health_noresponse
 under: |
   This might mean that the mould is so bad that it is seriously affecting your health or your ability to live in some rooms of our home. 
@@ -88,19 +85,28 @@ sets: all_done
 ---
 field: local_authority
 question: | 
-  If the problem is affecting your health and you have not received an appropriate response from your landlord (for example, explaining how or when they will fix the issue) within 14 days, we would recommend contacting the Environmental Health department at your local council. 
+  If the problem is affecting your health and you have not received an appropriate response from your landlord (explaining how or when they will fix the issue) within 14 days, we would recommend contacting the Environmental Health department at your local council. 
 subquestion: |
-  However, it is important to note that your landlord may try to evict you if you complain. If you have a tenancy that started after 1 October 2015 then you would have protection against being evicted. Have you attempted to contact the council? 
+ Have you attempted to contact the council? 
 yesno: council
+under: |
+  If you have a tenancy that started after 1 October 2015 then you are protected from being evicted by your landlord if you filed a complaint about repairs not being completed, and they did not respond with a good response within 14 days. 
 ---
 field: council_contact
 question: |
-  We would recommend that you contact your the Environmental Health department at your local council since the mould is affect your health and you have attempted to contact your landlord and have it fixed, as well as waited the necessary 14 days. 
+  We would recommend that you contact the Environmental Health department at your local council since the mould is affect your health and you have attempted to contact your landlord and have it fixed, as well as waited the necessary 14 days. 
 subquestion: |
   Would you like a document summarising your request?
 yesno: councilContactDoc
 ---
-field: councilDoc
+mandatory: True
+code: |
+  if councilContactDoc: 
+    councilDoc
+  else: 
+    all_done
+---
+event: councilDoc
 question: Please find below a summary of your advice from openTenancy.
 attachments:
   - name: openTenancy Advice
