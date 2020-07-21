@@ -51,9 +51,9 @@ export default class BlogPage extends Component {
               <div className='columns'>
                 <div className='column is-10 is-offset-1'>
                   <div className='section'>
-                    <h1 className='title'>
+                    <div id='maintitle'>
                       Blog
-                    </h1>
+                    </div>
                   </div>
                 </div>
               </div>
