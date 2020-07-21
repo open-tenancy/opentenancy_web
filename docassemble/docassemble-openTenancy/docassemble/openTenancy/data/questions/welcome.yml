@@ -1,5 +1,5 @@
 include: 
-  repairs.yml
+  - repairs.yml
 ---
 metadata:
   title: |
@@ -32,6 +32,7 @@ code: |
   else: 
     legal_clarity
 ---
+mandatory: True
 id: category question
 question: |
   Welcome to openTenancy! Over the next few minutes please help us to target the advice to you by answering a few simple questions. 

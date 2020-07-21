@@ -1,7 +1,3 @@
-include: 
-  welcome.yml
-  dampmould.yml
----
 mandatory: True
 code: |
   if repairs_start: 
@@ -18,13 +14,12 @@ question: |
   So you have a repairs issue! We're going to ask you a few questions to give you the best possible advice.
 subquestion: |
   Do you have a written tenancy agreement (a contract between you and your landlord)?
-field: repairs_start
 yesno: repairs_start
 --- 
+mandatory: True
 id: tenancylength
 question: | 
   That's great that you have a written contract. Is your tenancy less than 7 years or is it a periodic tenancy?   
-field: tenancy_length
 yesno: sevenyears
 under: |
   A periodic tenancy means that it rolls over on either a weekly or monthly basis and has no fixed end date. It doesn't necessarily have to have started as a periodic tenancy, but could have rolled over at the end of a fixed term contract. 
@@ -39,6 +34,7 @@ choices:
   - Start Again: disclaimer_question
   - Exit: exit
 ---
+mandatory: True
 question: |
   Select below which category best describes the type of repair that you need advice for. 
 field: repairtype
@@ -52,3 +48,6 @@ choices:
   - DECORATION; Repair relating to decoration for the property : decoration
   - DAMP or MOULD; Repair relating to dampness or mould : damp
   - OTHER; Any other type of repair : other
+---
+include: 
+  - dampmould.yml
