@@ -7,7 +7,7 @@ meta_description: >-
 heading: Your Tenancy Rights Made Simple. 
 description: >-
   We believe that tenancy laws should be made more accessible and clear for everyone, regardless of legal experience. 
-  So, we made openTenancy. It is as simple as answering a few questions, at the end of which you will walk away with relevant advice - pointing out the legal basis for the advice, and your suggested next steps. openTenancy is completely free, aimed at ensuring everyone has equal tools to enforce their rights. 
+  So, we made openTenancy. It is as simple as answering a few questions, at the end of which you will walk away with relevant advice - pointing out the legal basis for the advice, and your suggested next steps. openTenancy is completely free, aimed at ensuring everyone has equal access to enforce their rights. 
 offerings:
   blurbs:
     - image: /img/docassemble_temp.png
