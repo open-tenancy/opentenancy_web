@@ -13,7 +13,7 @@ offerings:
     - image: /img/docassemble_temp.png
       text: > 
           
-    - image: /img/unamed.jpg
+    - image: 
       text: > 
           Using openTenancy is easy. Simply go to our 'Get Advice' page and answer a few simple questions, and you'll walk away with a simple document detailing the relevant law and our advice for next steps, all written simply. 
 
