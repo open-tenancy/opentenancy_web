@@ -23,41 +23,41 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/assets/img`,
-        name: 'uploads',
+        name: "uploads",
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/assets/img`,
-        name: 'images',
+        name: "images",
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
+            resolve: "gatsby-remark-relative-images",
             options: {
-              name: 'uploads',
+              name: "uploads",
             },
           },
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -69,7 +69,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
@@ -95,10 +95,10 @@ module.exports = {
       options: {
         name: config.siteTitle,
         short_name: config.siteTitleAlt,
-        start_url: '/index.html',
+        start_url: "/index.html",
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'standalone',
+        display: "standalone",
         icons: [
           {
             src: `/icons/icon-192x192.png`,
@@ -115,13 +115,13 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: "gatsby-plugin-feed",
       options: {
-        setup (ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.generator = config.siteTitle
-          return ret
+        setup(ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata;
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
+          ret.generator = config.siteTitle;
+          return ret;
         },
         query: `
                 {
@@ -142,13 +142,13 @@ module.exports = {
               `,
         feeds: [
           {
-            serialize (ctx) {
-              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
+            serialize(ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
               return ctx.query.allMarkdownRemark.edges
                 .filter(
-                  edge => edge.node.frontmatter.templateKey === 'article-page'
+                  (edge) => edge.node.frontmatter.templateKey === "article-page"
                 )
-                .map(edge => ({
+                .map((edge) => ({
                   categories: edge.node.frontmatter.tags,
                   date: edge.node.frontmatter.date,
                   title: edge.node.frontmatter.title,
@@ -156,8 +156,8 @@ module.exports = {
                   author: rssMetadata.author,
                   url: rssMetadata.site_url + edge.node.fields.slug,
                   guid: rssMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
-                }))
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                }));
             },
             query: `
                     {
@@ -198,13 +198,34 @@ module.exports = {
         resolvers: {
           // For any node of type MarkdownRemark, list how to resolve the fields` values
           MarkdownRemark: {
-            title: node => node.frontmatter.title,
-            tags: node => node.frontmatter.tags,
-            slug: node => node.fields.slug,
+            title: (node) => node.frontmatter.title,
+            tags: (node) => node.frontmatter.tags,
+            slug: (node) => node.fields.slug,
           },
         },
       },
     },
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-173235394-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: [],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        cookieDomain: "opentenancy.co.uk",
+      },
+    },
   ],
-}
+};
