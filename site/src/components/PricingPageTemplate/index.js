@@ -32,7 +32,7 @@ const PricingPageTemplate = ({
     <section className='section section--gradient'>
       <div className='container'>
         <div className='section'>
-            <iframe id="docassemble" src="http://ec2-3-8-91-86.eu-west-2.compute.amazonaws.com:80/interview?i=docassemble.playground1%3Awelcome.yml#page1" title="Open Tenancy"></iframe>
+            <iframe id="docassemble" src="http://ec2-3-8-91-86.eu-west-2.compute.amazonaws.com:80" title="Open Tenancy"></iframe>
         </div>
       </div>
     </section>
