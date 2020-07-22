@@ -10,7 +10,7 @@ description: >-
   So, we made openTenancy. It is as simple as answering a few questions, at the end of which you will walk away with relevant advice - pointing out the legal basis for the advice, and your suggested next steps. openTenancy is completely free, aimed at ensuring everyone has equal access to enforce their rights. 
 offerings:
   blurbs:
-    - image: /img/docassemble_temp.png
+    - image: /img/interviewex.png
       text: > 
           
     - image: 
