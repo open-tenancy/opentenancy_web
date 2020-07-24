@@ -23,10 +23,10 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='section'>
                 <div id='maintitle'>
-                    Welcome to 
+                    Welcome to
                       <div id = 'companyname'>
-                      openTenancy  
-                        <button id="letschat" class="button ml-5  is-dark is-link  is-large is-rounded is-inverted is-full-width"><a id='letschatbutt' href="http://ec2-3-8-91-86.eu-west-2.compute.amazonaws.com/interview?i=docassemble.playground1%3Awelcome.yml#page1">Let's Chat</a></button>
+                      openTenancy
+                        <button id="letschat" class="button ml-5  is-dark is-link  is-large is-rounded is-inverted is-full-width"><a id='letschatbutt' href="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1">Let's Chat</a></button>
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@ const HomePageTemplate = ({
                         {heading}
                       </h3>
                       <p>{description}</p>
-                   </center> 
+                   </center>
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
               </div>
