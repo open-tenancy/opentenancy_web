@@ -1,6 +1,11 @@
 $primary: #00d1b2
 $primary-invert: #ffffff
 
+$break-small: 320px
+$break-medium: 520px
+$break-large: 1288px
+$break-max: 1289px
+
 @import "~bulma"
 
 html,
@@ -22,28 +27,6 @@ body,
   height: 1000px
   width: 90%
 
-#letschat
-  margin-left: 3rem /*ml-6*/
-  margin-top: -7rem
-  margin-left: auto
-  margin-right: -30rem
-  display: block
-
-#maintitle
-  margin-left: 3rem /*ml-6*/
-  color: dark grey
-  font-size: 350%
-  margin-top: -4rem
-  margin-left: auto
-  margin-right: auto
-  display: block
-
-#companyname
-  font-size: 220%
-  margin-top: -4rem
-  max-width: 600px
-  font-weight: bold
-  display: block
 
 #subtitlemain
   margin-left: 3rem /*ml-6*/
@@ -58,11 +41,70 @@ body,
   border-width: 2px
   color: $dark
 
+//TITLE BANNER STYLING
+
+#maintitle
+  font-size: 100%
+
+#companyname
+  font-size: 220%
+  margin-top: -4rem
+  max-width: 600px
+  font-weight: bold
+  display: block
+
+#welcome-to
+
+#letschat
+  margin-top: 5rem
+  margin-right: 8rem
+
+//MOBILE RESPONSIVENESS STYLING
+
+@media (min-width: $break-small) /*text button fix*/
+  #letschat
+    margin-top: 5rem
+    margin-right: 8rem
+
+  #maintitle
+    font-size: 200%
+    word-break: keep-all
+
+  #companyname
+    margin-top: 0.5rem
+
+@media (min-width: $break-medium)
+  #letschat
+    margin-top: 5rem
+    margin-right: 8rem
+
+  #maintitle
+    font-size: 300%
+    word-break: keep-all
+
+@media (min-width: $break-large) /*lets chat button fix*/
+  #letschat
+    margin-left: 3rem
+    margin-top: -7rem
+    margin-left: auto
+    margin-right: -30rem
+    display: block
+
+  #maintitle
+    margin-left: 3rem
+    color: dark grey
+    font-size: 350%
+    margin-top: -4rem
+    margin-left: auto
+    margin-right: auto
+    display: block
+    word-break: keep-all
+
 .dark-mode-override /*dark mode for accessability*/
   background-color: black
   color: white
 
-#letschatbutt 
+#letschatbutt
   color: dark grey
 
 nav
