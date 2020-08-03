@@ -4,7 +4,7 @@ module.exports = {
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
   siteUrl: 'https://www.opentenancy.co.uk', // Domain of your website without pathPrefix.
   pathPrefix: '', 
-  siteDescription: 'Tenancy advice, plain and simple.', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'UK tenancy advice, free, plain and simple. Aimed at students, but available for all.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB Application ID for using app insights
   googleTagManagerID: '', // GTM tracking ID.
