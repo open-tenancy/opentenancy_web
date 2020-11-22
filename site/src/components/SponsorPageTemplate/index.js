@@ -28,14 +28,15 @@ const SponsorPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className='section section--gradient' id='docassemble-section'>
-      <h1> Sponsor Us </h1>
+    <section className='section section--gradient'>
+      <h3 className='has-text-weight-semibold is-size-2'> <center> Platinum Sponsors </center> </h3>
+        <center><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogo'/></center>
     </section>
   </div>
 )
 
 SponsorPageTemplate.propTypes = {
-  title: 'Sponsor Us',
+  title: 'Sponsors',
   meta_title: PropTypes.string,
   meta_description: PropTypes.string
 }

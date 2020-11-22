@@ -1,7 +1,7 @@
 ---
 templateKey: sponsor-page
-title: Get Advice
-meta_title: Get Advice | openTenancy
+title: Sponsors
+meta_title: Sponsors | openTenancy
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
