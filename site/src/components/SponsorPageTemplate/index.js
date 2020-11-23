@@ -3,11 +3,10 @@ import Helmet from 'react-helmet'
 import Pricing from '../Pricing'
 import PropTypes from 'prop-types'
 
-const PricingPageTemplate = ({
+const SponsorPageTemplate = ({
   title,
   meta_title,
-  meta_description,
-  pricing,
+  meta_description
 }) => (
   <div>
     <Helmet>
@@ -29,21 +28,19 @@ const PricingPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className='section section--gradient' id='docassemble-section'>
-            <iframe id="docassemble" src="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1" title="Open Tenancy"></iframe>
+    <section className='section section--gradient'>
+      <h3 className='has-text-weight-semibold is-size-2'> <center> Platinum Sponsors </center> </h3>
+        <center><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogo'/></center>
+          <h3 id='sponsorName'><a href='https://www.bamlegal.co.uk/'> <center> BamLegal </center> </a></h3>
+            <h3><center> BamLegal is a Legal Engineering. Catherine's sponsorship is covers the costs of running our servers for the year. </center></h3>
     </section>
   </div>
 )
 
-PricingPageTemplate.propTypes = {
-  title: 'Get Advice',
+SponsorPageTemplate.propTypes = {
+  title: 'Sponsors',
   meta_title: PropTypes.string,
-  meta_description: PropTypes.string,
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
+  meta_description: PropTypes.string
 }
 
-export default PricingPageTemplate
+export default SponsorPageTemplate
