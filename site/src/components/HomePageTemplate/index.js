@@ -29,9 +29,11 @@ const HomePageTemplate = ({
                   <div id = 'companyname'>
                       openTenancy
                   </div>
-                  <button id="letschat" class="button ml-5  is-dark is-link  is-large is-rounded is-inverted is-full-width"><a id='letschatbutt' href="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1">Let's Chat</a></button>
+
+    
                 </div>
               </div>
+                <button id="letschat" class = "button2"><a id='letschatbutt' href="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1">Let's Chat</a></button>
             </div>
           </div>
         </div>
