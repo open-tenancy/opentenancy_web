@@ -28,17 +28,21 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           </button>
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
-
           <div className='navbar-end'>
             <SearchBox className='is-warning' searchIndex={data.siteSearchIndex.index} />
             <Link className='navbar-item' to='/about'>
                             About
             </Link>
-            <Link className='navbar-item' to='/pricing'>
-                            Get Advice
+
+
+            <Link className='navbar-item' to='/sponsor'>
+                            Sponsors
             </Link>
             <Link className='navbar-item' to='/blog'>
                             Blog
+            </Link>
+            <Link className='navbar-item' to='/contact'>
+                            Contact Us
             </Link>
             <div className='navbar-item'>
               <div className='field is-grouped'>
@@ -46,8 +50,8 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                   <Link
                     id="contact-us"
                     className='button is-warning is-outlined'
-                    to='/contact'>
-                            Contact Us
+                    to='/pricing'>
+                            Get Advice
                   </Link>
                 </p>
               </div>
