@@ -50,6 +50,11 @@ body,
 
 //TITLE BANNER STYLING
 
+.centered
+  text-align: center
+  margin: auto
+  width: 50%
+
 #maintitle
   font-size: 100%
 
@@ -64,14 +69,27 @@ body,
   margin-left: auto
   margin-top: -10rem
 
+#letschatbutt
+
 #letschat
-  margin-top: 5rem
-  margin-right: 2rem
-  margin-left: 2rem
+  font-family: $family-primary
+  background-color: white
+  font-size: 3rem
+  width: 100%
+  height: 35%
+  margin: auto
+  padding-bottom: 50px
+  padding-top: 50px
+  border-radius: 7rem
+  border: 3px solid #ffdd57
+  box-shadow: 7px 7px 20px gray
 
-//MOBILE RESPONSIVENESS STYLING
+#letschat:hover
+  background-color: #ffdd57
+  border: 3px solid orange
 
-@media (min-width: $break-small) /*text button fix*/
+
+/*@media (min-width: $break-small)
   #letschat
     margin-top: 5rem
     margin-right: 8rem
@@ -81,25 +99,25 @@ body,
     word-break: keep-all
 
   #companyname
-    margin-top: 0.5rem
+    margin-top: 0.5rem*/
 
-@media (min-width: $break-medium)
+/*@media (min-width: $break-medium)
   #letschat
     margin-top: 5rem
     margin-right: 8rem
 
   #maintitle
     font-size: 300%
-    word-break: keep-all
+    word-break: keep-all*/
 
-@media (min-width: $break-large) /*lets chat button fix*/
+/*@media (min-width: $break-large)
   #letschat
     margin-top: -4rem
     margin-left: auto
     margin-right: auto
-    display: block
+    display: block*/
 
-  #maintitle
+  /*#maintitle
     margin-left: 3rem
     color: dark grey
     font-size: 350%
@@ -107,19 +125,12 @@ body,
     margin-left: auto
     margin-right: auto
     display: block
-    word-break: keep-all
-
+    word-break: keep-all*/
 
 
 .dark-mode-override /*dark mode for accessability*/
   background-color: black
   color: white
-
-#letschatbutt
-  color: dark grey
-  margin-top: -4rem
-  margin-left: auto
-  margin-right: auto
 
 nav
   border-bottom: lightgray solid 0.1vmin

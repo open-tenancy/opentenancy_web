@@ -33,8 +33,10 @@ const HomePageTemplate = ({
 
                 </div>
               </div>
-                <button id="letschat" class = "button2"><a id='letschatbutt' href="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1">Get Advice</a></button>
-            </div>
+                <div class="centered">
+                  <button id="letschat" class = "button2">Get Advice</button>
+                </div>
+              </div>
           </div>
         </div>
       </div>
