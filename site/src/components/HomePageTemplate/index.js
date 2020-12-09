@@ -29,7 +29,9 @@ const HomePageTemplate = ({
                   <div id = 'companyname'>
                       openTenancy
                   </div>
-
+                  <div id = "quote-message">
+                    Problems with your landlord?
+                  </div>
 
                 </div>
               </div>
