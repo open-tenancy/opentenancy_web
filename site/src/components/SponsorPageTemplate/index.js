@@ -13,7 +13,7 @@ const SponsorPageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-warning is-bold is-medium'>
+    <section className='hero testing-grad is-bold is-medium'>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
