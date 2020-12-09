@@ -14,13 +14,13 @@ const PricingPageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-warning is-bold is-medium'>
+    <section className='hero testing-grad is-bold is-medium'>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                  <div id='maintitle'>
+                  <div id='maintitle' className="section-title">
                   {title}
                 </div>
               </div>
@@ -30,7 +30,7 @@ const PricingPageTemplate = ({
       </div>
     </section>
     <section className='section section--gradient' id='docassemble-section'>
-            <iframe id="docassemble" src="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1" title="Open Tenancy"></iframe>
+            <iframe id="docassemble" src="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.base%3Adata%2Fquestions%2Fdefault-interview.yml#page1" title="Open Tenancy"></iframe>
     </section>
   </div>
 )

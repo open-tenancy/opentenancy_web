@@ -9,13 +9,13 @@ const ContactPageTemplate = ({ title, subtitle, meta_title, meta_description }) 
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-warning is-bold is-medium'>
+    <section className='hero testing-grad is-bold is-medium'>
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <div id='maintitle'>
+                <div id='maintitle' className="section-title">
                   {title}
                  </div>
                 <h2 className='subtitle'>

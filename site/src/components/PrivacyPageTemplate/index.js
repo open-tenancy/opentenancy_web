@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
  <Helmet>
     <title>Privacy Policy</title>
             </Helmet>
-            <section className='hero is-warning is-bold is-large'>
+            <section className='hero testing-grad is-bold is-large'>
                 <div className='hero-body'>
                     <div className='container'>
                         <div className='columns'>
