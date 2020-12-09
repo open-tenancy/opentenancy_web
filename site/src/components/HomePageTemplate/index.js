@@ -16,7 +16,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero testing-grad is-bold is-large'>
+    <section className='hero testing-grad is-bold is-large' id="main_banner">
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
@@ -24,13 +24,13 @@ const HomePageTemplate = ({
               <div className='section'>
 
                 <div className='maintitle'>
-                  <div id='welcome-to'>
+                  <div id='welcome-to' className="is-size-2">
                     Welcome to
                   </div>
                   <div id = 'companyname'>
                       openTenancy
                   </div>
-                  <div id = "quote-message">
+                  <div id = "quote-message" className="is-size-3">
                     Problems with your landlord?
                   </div>
 
