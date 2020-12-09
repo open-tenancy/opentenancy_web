@@ -15,7 +15,7 @@ const ContactPageTemplate = ({ title, subtitle, meta_title, meta_description }) 
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                <div id='maintitle'>
+                <div id='maintitle' className="section-title">
                   {title}
                  </div>
                 <h2 className='subtitle'>
