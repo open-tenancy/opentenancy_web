@@ -20,7 +20,7 @@ const PricingPageTemplate = ({
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
               <div className='section'>
-                  <div id='maintitle'>
+                  <div id='maintitle' className="section-title">
                   {title}
                 </div>
               </div>
