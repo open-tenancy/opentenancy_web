@@ -37,7 +37,7 @@ const HomePageTemplate = ({
                 </div>
               </div>
                 <div class="centered">
-                  <button id="letschat" class = "button2">Get Advice</button>
+                  <button id="letschat" class = "button2"><a href="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1">Get Advice</a></button>
                 </div>
               </div>
           </div>
