@@ -16,28 +16,30 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero is-warning is-bold is-large'>
+    <section className='hero testing-grad is-bold is-large' id="main_banner">
       <div className='hero-body'>
         <div className='container'>
           <div className='columns'>
-            <div className='column is-10 is-offset-1'>
+            <div className='column is-offset-1'>
               <div className='section'>
 
-                <div id='maintitle'>
-
-                  <div id='welcome-to'>
+                <div className='maintitle'>
+                  <div id='welcome-to' className="is-size-2">
                     Welcome to
                   </div>
-
                   <div id = 'companyname'>
                       openTenancy
                   </div>
+                  <div id = "quote-message" className="is-size-3">
+                    Problems with your landlord?
+                  </div>
 
-                  <button id="letschat" class="button ml-5  is-dark is-link  is-large is-rounded is-inverted is-full-width"><a id='letschatbutt' href="https://interview.opentenancy.co.uk/interview?i=docassemble.playground1%3Awelcome.yml#page1">Let's Chat</a></button>
                 </div>
-
               </div>
-            </div>
+                <div class="centered">
+                  <button id="letschat" class = "button2"><a href="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1">Get Advice</a></button>
+                </div>
+              </div>
           </div>
         </div>
       </div>

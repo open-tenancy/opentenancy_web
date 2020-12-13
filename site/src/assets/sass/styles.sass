@@ -50,25 +50,53 @@ body,
 
 //TITLE BANNER STYLING
 
+.centered
+  text-align: center
+  margin: auto
+  width: 70%
+
+.testing-grad
+  background-image: linear-gradient(#FFA500, #ffd817)
+
+.section-title
+  font-size: 3rem
+
 #maintitle
-  font-size: 100%
 
 #companyname
-  font-size: 220%
-  margin-top: -4rem
-  max-width: 600px
-  font-weight: bold
-  display: block
+  font-size: 10rem
 
 #welcome-to
 
+#letschatbutt
+
 #letschat
-  margin-top: 5rem
-  margin-right: 8rem
+  font-family: $family-code
+  color: #4C3910
+  background-color: white
+  font-size: 3rem
+  width: 100%
+  max-height: 120px
+  margin: auto
+  padding-bottom: 25px
+  padding-top: 25px
+  border-radius: 0.5rem
+  border: 3px solid #ffdd57
+  box-shadow: 7px 7px 20px gray
 
-//MOBILE RESPONSIVENESS STYLING
+#letschat:hover
+  background-color: #ffdd57
+  border: 3px solid orange
+  max-height: 120px
+  transition: background-color 1s
 
-@media (min-width: $break-small) /*text button fix*/
+.maintitle
+  //background-color: red
+  text-align: center
+  width: 100%
+  margin-top: -100px
+
+/*@media (min-width: $break-small)
   #letschat
     margin-top: 5rem
     margin-right: 8rem
@@ -78,26 +106,25 @@ body,
     word-break: keep-all
 
   #companyname
-    margin-top: 0.5rem
+    margin-top: 0.5rem*/
 
-@media (min-width: $break-medium)
+/*@media (min-width: $break-medium)
   #letschat
     margin-top: 5rem
     margin-right: 8rem
 
   #maintitle
     font-size: 300%
-    word-break: keep-all
+    word-break: keep-all*/
 
-@media (min-width: $break-large) /*lets chat button fix*/
+/*@media (min-width: $break-large)
   #letschat
-    margin-left: 3rem
-    margin-top: -7rem
+    margin-top: -4rem
     margin-left: auto
-    margin-right: -10rem
-    display: block
+    margin-right: auto
+    display: block*/
 
-  #maintitle
+  /*#maintitle
     margin-left: 3rem
     color: dark grey
     font-size: 350%
@@ -105,19 +132,21 @@ body,
     margin-left: auto
     margin-right: auto
     display: block
-    word-break: keep-all
-
+    word-break: keep-all*/
 
 
 .dark-mode-override /*dark mode for accessability*/
   background-color: black
   color: white
 
-#letschatbutt
-  color: dark grey
+.navbar-brand
+  background-color: orange
+
+.navbar-menu
+  background-color: orange
 
 nav
-  border-bottom: lightgray solid 0.1vmin
+  //border-bottom: lightgray solid 0.1vmin
 
 .content .taglist
   list-style: none
@@ -129,12 +158,21 @@ nav
   flex-wrap: wrap
   justify-content: left
   align-items: center
-  li
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
 
 .margin-top-0
   margin-top: 0 !important
+
+#SponsorLogo
+  width: 20%
+
+#centered
+  align-items: center
+
+#sponsorName
+  color: dark grey
+  font-size: 225%
 
 @import "~bulma"
