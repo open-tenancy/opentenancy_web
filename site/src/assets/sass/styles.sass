@@ -71,7 +71,6 @@ body,
 #letschatbutt
 
 #letschat
-  font-family: $family-code
   color: #4C3910
   background-color: white
   font-size: 3rem
@@ -83,6 +82,7 @@ body,
   border-radius: 0.5rem
   border: 3px solid #ffdd57
   box-shadow: 7px 7px 20px gray
+  color: grey
 
 #letschat:hover
   background-color: #ffdd57
@@ -90,11 +90,24 @@ body,
   max-height: 120px
   transition: background-color 1s
 
+#contact
+  color: #4C3910
+  background-color: orange
+  font-size: 2rem
+  width: 50%
+  max-height: 60px
+  border-radius: 0.5rem
+  box-shadow: 7px 7px 20px gray
+
 .maintitle
   //background-color: red
   text-align: center
   width: 100%
   margin-top: -100px
+
+.spacing
+  padding-bottom: 50px
+  padding-top: 25px
 
 /*@media (min-width: $break-small)
   #letschat
@@ -157,6 +170,7 @@ nav
   display: flex
   flex-wrap: wrap
   justify-content: left
+
   align-items: center
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
@@ -167,6 +181,10 @@ nav
 
 #SponsorLogo
   width: 20%
+
+#SponsorLogoHome
+  padding-top: 15px
+  width: 15%
 
 #centered
   align-items: center
