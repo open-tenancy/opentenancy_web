@@ -61,6 +61,8 @@ const HomePageTemplate = ({
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
               </div>
+              <h3 className='has-text-weight-semibold is-size-2'> <center> Sponsored By </center> </h3>
+              <center><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogoHome'/></center>
             </div>
           </div>
         </div>

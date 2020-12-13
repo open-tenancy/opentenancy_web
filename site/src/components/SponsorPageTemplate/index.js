@@ -29,10 +29,19 @@ const SponsorPageTemplate = ({
       </div>
     </section>
     <section className='section section--gradient'>
+    <div className = 'spacing'>
       <h3 className='has-text-weight-semibold is-size-2'> <center> Platinum Sponsors </center> </h3>
+      </div>
         <center><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogo'/></center>
           <h3 id='sponsorName'><a href='https://www.bamlegal.co.uk/'> <center> BamLegal </center> </a></h3>
-            <h3><center> BamLegal is a Legal Engineering. Catherine's sponsorship is covers the costs of running our servers for the year. </center></h3>
+
+      <div className = 'spacing'>
+      <h3 className='has-text-weight-semibold is-size-2'> <center> Interested in Sponsoring Us? </center> </h3>
+      </div>
+        <div class = "centered">
+          <button id="contact" class = "button2"><a href="/contact">Get in Touch</a></button>
+        </div>
+
     </section>
   </div>
 )
