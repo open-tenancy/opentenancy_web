@@ -13,21 +13,7 @@ const SponsorPageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='hero testing-grad is-bold is-medium'>
-      <div className='hero-body'>
-        <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                  <div id='maintitle' className="section-title">
-                  {title}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div id = 'pageTitle'> Sponsors </div>
     <section className='section section--gradient'>
     <div className = 'spacing'>
       <h3 className='has-text-weight-semibold is-size-2'> <center> Platinum Sponsors </center> </h3>

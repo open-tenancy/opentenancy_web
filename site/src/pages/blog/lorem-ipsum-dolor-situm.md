@@ -1,10 +1,10 @@
 ---
 templateKey: article-page
-title: Lorem Ipsum Dolor Situm
+title: Launching openTenancy
 slug: lorem-ipsum-dolor-situm
-date: 2018-03-29T03:55:49.370Z
+date: 2021-01-08T03:55:49.370Z
 cover: /img/products-grid3.jpg
-meta_title: Lorem Ipsum Dolor Situm
+meta_title: Launching OpenTenancy
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
