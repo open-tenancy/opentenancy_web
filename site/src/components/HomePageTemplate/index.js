@@ -22,9 +22,8 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-offset-1'>
               <div className='section'>
-
                 <div className='maintitle'>
-                  <div id='welcome-to' className="is-size-2">
+                  <div id='welcome-to'>
                     Welcome to
                   </div>
                   <div id = 'companyname'>
@@ -37,7 +36,7 @@ const HomePageTemplate = ({
                 </div>
               </div>
                 <div class="centered">
-                  <button id="letschat" class = "button2"><a href="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1">Get Advice</a></button>
+                  <button id="letschat"><a href="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1">Get Advice</a></button>
                 </div>
               </div>
           </div>
@@ -56,7 +55,8 @@ const HomePageTemplate = ({
                       <h3 className='has-text-weight-semibold is-size-2'>
                         {heading}
                       </h3>
-                      <p>{description}</p>
+                      <center><img src='/img/UseCase.png' alt = 'use case diagram'/></center>
+
                    </center>
                 </div>
                 <Offerings gridItems={offerings.blurbs} />
