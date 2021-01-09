@@ -39,27 +39,13 @@ export default class BlogPage extends Component {
     return (
       <Layout>
         <Helmet>
-          <title>tenancy advice | openTenancy</title>
+          <title>Blog | openTenancy</title>
           {/* Schema.org tags */}
           <script type='application/ld+json'>
             {JSON.stringify(websiteSchemaOrgJSONLD)}
           </script>
         </Helmet>
-        <section className='hero testing-grad is-medium is-bold'>
-          <div className='hero-body'>
-            <div className='container'>
-              <div className='columns'>
-                <div className='column is-10 is-offset-1'>
-                  <div className='section'>
-                    <div id='maintitle' className="section-title">
-                      Blog
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div id = 'pageTitle'> Blog </div>
         <section className='section'>
           <PostCard posts={group} />
           <section className='section'>
