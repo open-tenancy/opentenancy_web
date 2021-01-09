@@ -1,7 +1,7 @@
 ---
-templateKey: team-page
-title: Meet the Team
-meta_title: The Team | openTenancy
+templateKey: privacy-page
+title: Privacy Policy
+meta_title: Privacy Policy | openTenancy
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
