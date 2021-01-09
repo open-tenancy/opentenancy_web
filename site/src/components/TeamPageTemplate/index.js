@@ -18,21 +18,21 @@ const TeamPageTemplate = ({
       <div class="column is-one-third">
           <p className='has-text-centered'>
             <img alt='' src='/img/amy.jpeg'/>
-                <p>Amy Conroy</p>
+                <p><a href = 'https://www.linkedin.com/in/amy-conroy/'>Amy Conroy</a></p>
                 <p>Co-Founder</p>
           </p>
         </div>
         <div class="column is-one-third">
             <p className='has-text-centered'>
               <img alt='' src='/img/ana.jpeg'/>
-                  <p>Ana Shmyglya</p>
+                  <p><a href = 'https://www.linkedin.com/in/ana-shmyglya-894095167/'>Ana Shmyglya</a></p>
                   <p>Co-Founder</p>
             </p>
           </div>
           <div class="column is-one-third">
               <p className='has-text-centered'>
                 <img alt='' src='/img/joe.jpg'/>
-                    <p>Joe Link</p>
+                    <p><a href = 'https://www.linkedin.com/in/joseph-link-3902261b9/'>Joe Link</a></p>
                     <p>Content Manager</p>
               </p>
           </div>
