@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import PrivacyPageTemplate from '../components/PrivacyPageTemplate'
 import Layout from '../components/Layout'
 
-const TeamPage = ({ data }) => {
+const PrivacyPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
