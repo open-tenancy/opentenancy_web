@@ -18,11 +18,17 @@ Because you deserve the chance to enforce your rights as a tenant, and ensure th
 We felt that a large part of the law was closed off and unaccessible, meaning that ordinary everyday citizens did not understand their rights due to the inaccessibility of the law. That's part of the reason that we decided to make openTenancy open source as well, because we wanted it to be built by the community based on what the community needed.
 
 ## What is open source?
+In the programming world, open source is computer software that is produced with open access for users to use and modify the software as they see fit. In some instances, the main version of the code for the software is also actively modified by the community rather than a private organization. This means that you do not have to be an employee to develop a product if its open source.
 
+## How is openTenancy open source?
+Our website and the source code for our interviews are all available on [Github](https://github.com/open-tenancy). This means that we're incredibly transparent, everything that you can see on this site you can also see who built it and everything else behind the scenes.
+
+We're also open for [contributions](/contribute) for both the website, directly to our Docassemble interviews, or in the form of flow charts or decision trees to help guide future interviews. We wanted future topics to be created by our users, as they are the individuals that are going to actively benefit from openTenancy.
+
+More than that, we saw a real opportunity to change the way that the law operates. The law, to be honest, has a typically bad reputation. We wanted to create a community instead, and have everyone come together to create something that can benefit hundreds of thousands if not millions of individuals in the UK and potentially around the world.
 
 ## How can I get involved?
-
-That's great! We love that you want to get involved. Hop on over to our [Contribute page](/contribute) to find out more.
+We love that you want to get involved. Hop on over to our [Contribute page](/contribute) to find out more.
 
 
 ## Is this legal advice?
