@@ -17,7 +17,17 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <Link to='/' className='navbar-item'>
             <strong>Home</strong>
           </Link>
-          <div class = "navbar-item has-dropdown is-hoverable">
+          <Link className='navbar-item is-hidden-desktop' to='/about'>
+                          FAQ
+          </Link>
+          <Link className='navbar-item is-hidden-desktop' to='/contribute'>
+                          Contribute
+          </Link>
+          <Link className='navbar-item is-hidden-desktop' to='/pricing'>
+                          Get Advice
+          </Link>
+
+          <div class = "navbar-item has-dropdown is-hoverable is-hidden-touch">
             <Link className='navbar-link' to='#'>
                             About
             </Link>
@@ -33,7 +43,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               </Link>
             </div>
           </div>
-          <div class = "navbar-item has-dropdown is-hoverable">
+          <div class = "navbar-item has-dropdown is-hoverable is-hidden-touch">
             <Link className='navbar-link' to='#'>
                             Get Involved
             </Link>
@@ -65,7 +75,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
           <div className='navbar-end'>
-
             <div className='navbar-item'>
               <div className='field is-grouped'>
                 <p className='control'>
