@@ -32,7 +32,6 @@ const HomePageTemplate = ({
                   <div id = "quote-message" className="is-size-3">
                     Problems with your landlord?
                   </div>
-
                 </div>
               </div>
                 <div class="centered">
