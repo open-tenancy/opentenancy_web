@@ -17,22 +17,28 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <Link to='/' className='navbar-item'>
             <strong>Home</strong>
           </Link>
-          <Link className='navbar-item' to='/about'>
-                          About
-          </Link>
-          <Link className='navbar-item' to='/team'>
-                          The Team
-          </Link>
+          <div class = "navbar-item has-dropdown is-hoverable">
+            <Link className='navbar-link' to='#'>
+                            About
+            </Link>
+            <div class = "navbar-dropdown">
+              <Link className='navbar-item' to='/team'>
+                              The Team
+              </Link>
+              <Link className='navbar-item' to='/about'>
+                              FAQ
+              </Link>
+              <Link className='navbar-item' to='/sponsor'>
+                              Sponsors
+              </Link>
+            </div>
+          </div>
           <Link className='navbar-item' to='/blog'>
                           Blog
           </Link>
           <Link className='navbar-item' to='/contribute'>
                           Contribute
           </Link>
-          <Link className='navbar-item' to='/sponsor'>
-                          Sponsors
-          </Link>
-
           <Link className='navbar-item' to='/contact'>
                           Contact Us
           </Link>

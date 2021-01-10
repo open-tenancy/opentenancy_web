@@ -7,7 +7,7 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div>
-      <div id = 'pageTitle'> About </div>
+      <div id = 'pageTitle'> FAQ </div>
       <section className='section section--gradient'>
         <div className='container'>
           <div className='columns'>
