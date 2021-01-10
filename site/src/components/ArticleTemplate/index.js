@@ -15,7 +15,7 @@ const ArticleTemplate = ({
   const PostContent = contentComponent || Content
   return (
     <div>
-      <h1 id='pageTitle'>
+      <h1 id='has-text-weight-semibold is-size-1'>
         {title}
       </h1>
       <img src={cover} alt={title} />
