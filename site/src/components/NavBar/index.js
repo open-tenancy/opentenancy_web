@@ -17,7 +17,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <Link to='/' className='navbar-item'>
             <strong>Home</strong>
           </Link>
-          <div class = "navbar-item has-dropdown is-hoverable">
+          <div class = "navbar-item has-dropdown is-hoverable is-hidden-touch">
             <Link className='navbar-link' to='#'>
                             About
             </Link>
@@ -33,7 +33,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               </Link>
             </div>
           </div>
-          <div class = "navbar-item has-dropdown is-hoverable">
+          <div class = "navbar-item has-dropdown is-hoverable is-hidden-touch">
             <Link className='navbar-link' to='#'>
                             Get Involved
             </Link>
@@ -49,7 +49,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               </Link>
             </div>
           </div>
-          <Link className='navbar-item' to='/contact'>
+          <Link className='navbar-item is-hidden-touch' to='/contact'>
                           Contact Us
           </Link>
 
@@ -65,7 +65,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
           <div className='navbar-end'>
-
             <div className='navbar-item'>
               <div className='field is-grouped'>
                 <p className='control'>
@@ -74,6 +73,27 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                     className='button is-warning is-outlined'
                     to='/pricing'>
                             Get Advice
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='/about'>
+                                  FAQ
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='/team'>
+                                  The Team
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='/blog'>
+                                  Blog
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='/contribute'>
+                                  Contribute
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='/sponsor'>
+                                  Sponsor
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='https://www.buymeacoffee.com/opentenancy'>
+                                  Buy Us a Byte
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='/contact'>
+                                  Contact Us
                   </Link>
                 </p>
               </div>
