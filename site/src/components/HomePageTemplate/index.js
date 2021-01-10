@@ -88,9 +88,16 @@ const HomePageTemplate = ({
                 </div>
                 <div className='spacing has-text-weight-semibold is-size-4'> It's Just. That. Easy. </div>
                 <h3 className='has-text-weight-semibold is-size-2 spacing'> Who are we? </h3>
+                <img src='/img/community.png' alt = 'use case diagram' id = "homePageimage"/>
+                <div className='has-text-weight-semibold is-size-4'> We're a community of individuals frustrated by how confusing the law is. </div>
+                <div className='has-text-weight-semibold is-size-4'> We want to make the law more accessible by summarising it in plain English. </div>
+                <div className='has-text-weight-semibold is-size-4'> We don't provide binding legal advice, but instead a way to help you understand what you're already entitled to. </div>
+                <div className = 'spacing'>
+                  <button id="adviceHome" class = "button2 spacing"><a href="/about">FAQ</a></button>
+                </div>
               </center>
 
-              <h3 className='has-text-weight-semibold is-size-4'> <center> Sponsored By </center> </h3>
+              <h3 className='spacing has-text-weight-semibold is-size-2'> <center> Sponsored By </center> </h3>
               <center><a href = "https://www.bamlegal.co.uk"><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogoHome'/></a></center>
             </div>
           </div>
