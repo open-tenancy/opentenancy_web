@@ -14,13 +14,10 @@ body,
 #gatsby-focus-wrapper,
 #layout-wrapper
 
-
 #layout-wrapper
   width: 100%
   display: flex
   flex-direction: column
-
-
 
 #content-wrapper
   flex: 1
@@ -63,6 +60,7 @@ body,
 .section-title
   font-size: 3vw
 
+
 #maintitle
 
 #companyname
@@ -74,8 +72,8 @@ body,
 #letschatbutt
 
 #letschat
-  color: #4C3910
-  background-color: #ffdd57
+  color: #F6C410
+  background-color: #F6C410
   font-size: 3vw
   width: 65%
   max-height: 120px
@@ -115,10 +113,11 @@ body,
     transition: background-color 1s
 
 .maintitle
-
   text-align: center
   width: 100%
-  margin-top: -100px
+  +tablet
+      margin-top: -250px
+
 
 .spacing
   padding-bottom: 50px
@@ -130,6 +129,26 @@ body,
   font-size: 10vw
   margin-left: 3rem
   color: #F4A505
+
+#centerColumn
+  margin-left: auto
+  margin-right: auto
+  display: block
+
+#homePageimage
+  width: 65%
+
+#adviceHome
+  border: none
+  padding: 0.65em 1.3em
+  background-color: #F8DD58
+  width: 30%
+  +tablet
+      font-size: 2vw
+
+#adviceHome:hover
+  background-color: #F4A505
+  transition: background-color 1s
 
 
 /*@media (min-width: $break-small)
