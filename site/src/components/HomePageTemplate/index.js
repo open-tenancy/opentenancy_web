@@ -58,10 +58,10 @@ const HomePageTemplate = ({
 
                    </center>
                 </div>
-                <Offerings gridItems={offerings.blurbs} />
+
               </div>
-              <h3 className='has-text-weight-semibold is-size-2'> <center> Sponsored By </center> </h3>
-              <center><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogoHome'/></center>
+              <h3 className='has-text-weight-semibold is-size-3'> <center> Sponsored By </center> </h3>
+              <center><a href = "https://www.bamlegal.co.uk"><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogoHome'/></a></center>
             </div>
           </div>
         </div>
