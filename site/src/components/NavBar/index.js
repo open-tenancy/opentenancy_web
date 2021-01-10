@@ -44,6 +44,9 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               <Link className='navbar-item' to='/sponsor'>
                               Sponsor
               </Link>
+              <Link className='navbar-item' to='https://www.buymeacoffee.com/opentenancy'>
+                              Buy Us a Byte
+              </Link>
             </div>
           </div>
           <Link className='navbar-item' to='/contact'>
