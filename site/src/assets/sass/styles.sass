@@ -13,7 +13,6 @@ body,
 #___gatsby,
 #gatsby-focus-wrapper,
 #layout-wrapper
-  height: 100%
 
 #layout-wrapper
   width: 100%
@@ -59,23 +58,24 @@ body,
   background-image: linear-gradient(#FFA500, #ffd817)
 
 .section-title
-  font-size: 3rem
+  font-size: 3vw
+
 
 #maintitle
 
 #companyname
-  font-size: 10rem
+  font-size: 10vw
 
 #welcome-to
+  font-size: 4vw
 
 #letschatbutt
 
 #letschat
-  font-family: $family-code
-  color: #4C3910
-  background-color: white
-  font-size: 3rem
-  width: 100%
+  color: #F6C410
+  background-color: #F6C410
+  font-size: 3vw
+  width: 65%
   max-height: 120px
   margin: auto
   padding-bottom: 25px
@@ -83,6 +83,12 @@ body,
   border-radius: 0.5rem
   border: 3px solid #ffdd57
   box-shadow: 7px 7px 20px gray
+  color: grey
+  display: block
+  outline: none
+  color: inherit
+  text-decoration: none
+
 
 #letschat:hover
   background-color: #ffdd57
@@ -90,11 +96,60 @@ body,
   max-height: 120px
   transition: background-color 1s
 
+#contact
+  color: #4C3910
+  font-size: 2vw
+  width: 40%
+  max-height: 120px
+  border-radius: 0.5rem
+  box-shadow: 7px 7px 20px gray
+  padding-bottom: 25px
+  padding-top: 25px
+
+#contact:hover
+    background-color: #ffdd57
+    border: 3px solid orange
+    max-height: 120px
+    transition: background-color 1s
+
 .maintitle
-  //background-color: red
   text-align: center
   width: 100%
-  margin-top: -100px
+  +tablet
+      margin-top: -250px
+
+
+.spacing
+  padding-bottom: 50px
+  padding-top: 25px
+
+
+#pageTitle
+  padding-top: 25px
+  font-size: 10vw
+  margin-left: 3rem
+  color: #F4A505
+
+#centerColumn
+  margin-left: auto
+  margin-right: auto
+  display: block
+
+#homePageimage
+  width: 65%
+
+#adviceHome
+  border: none
+  padding: 0.65em 1.3em
+  background-color: #F8DD58
+  width: 30%
+  +tablet
+      font-size: 2vw
+
+#adviceHome:hover
+  background-color: #F4A505
+  transition: background-color 1s
+
 
 /*@media (min-width: $break-small)
   #letschat
@@ -157,6 +212,7 @@ nav
   display: flex
   flex-wrap: wrap
   justify-content: left
+
   align-items: center
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
@@ -167,6 +223,10 @@ nav
 
 #SponsorLogo
   width: 20%
+
+#SponsorLogoHome
+  padding-top: 15px
+  width: 15%
 
 #centered
   align-items: center

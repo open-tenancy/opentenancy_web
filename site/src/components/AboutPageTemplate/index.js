@@ -7,21 +7,7 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <div>
-      <section className='hero testing-grad is-bold is-medium'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  <div id='maintitle' className="section-title">
-                    {title}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div id = 'pageTitle'> FAQ </div>
       <section className='section section--gradient'>
         <div className='container'>
           <div className='columns'>

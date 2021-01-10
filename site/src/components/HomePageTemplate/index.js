@@ -22,9 +22,8 @@ const HomePageTemplate = ({
           <div className='columns'>
             <div className='column is-offset-1'>
               <div className='section'>
-
                 <div className='maintitle'>
-                  <div id='welcome-to' className="is-size-2">
+                  <div id='welcome-to'>
                     Welcome to
                   </div>
                   <div id = 'companyname'>
@@ -33,11 +32,10 @@ const HomePageTemplate = ({
                   <div id = "quote-message" className="is-size-3">
                     Problems with your landlord?
                   </div>
-
                 </div>
               </div>
                 <div class="centered">
-                  <button id="letschat" class = "button2"><a href="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1">Get Advice</a></button>
+                  <button id="letschat"><a href="/pricing">Get Advice</a></button>
                 </div>
               </div>
           </div>
@@ -46,7 +44,6 @@ const HomePageTemplate = ({
     </section>
     <section className='section section--gradient'>
       <div className='container'>
-
         <div className='section'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
@@ -56,11 +53,52 @@ const HomePageTemplate = ({
                       <h3 className='has-text-weight-semibold is-size-2'>
                         {heading}
                       </h3>
-                      <p>{description}</p>
                    </center>
                 </div>
-                <Offerings gridItems={offerings.blurbs} />
+                <div class="columns is-vcentered">
+                    <div class="column">
+                      <center>
+                        <div className = 'has-text-weight-semibold is-size-4' id = "centerColumn"> We eliminate all of the white noise. </div>
+                      </center>
+                    </div>
+                    <div class="column">
+                      <center>
+                        <img src='/img/whitenoise.png' alt = 'use case diagram' id = "homePageimage"/>
+                      </center>
+                    </div>
+                </div>
+                <div class="columns is-vcentered">
+                    <div class="column">
+                      <center>
+                          <img src='/img/law.png' alt = 'use case diagram' id = "homePageimage"/>
+                      </center>
+                    </div>
+                    <div class="column">
+                      <center>
+                          <div className = 'has-text-weight-semibold is-size-4' id = "centerColumn"> Putting the law in the hands of the people who use it. </div>
+                      </center>
+                    </div>
+                </div>
               </div>
+              <center> <h3 className='has-text-weight-semibold is-size-2 spacing'> How does it work? </h3>
+                <div className = 'has-text-weight-semibold is-size-4 ' id = "centerColumn"> Step one: Answer a questionnaire. </div>
+                <div className = 'has-text-weight-semibold is-size-4 ' id = "centerColumn"> Step two: Receive a document summarising your tenancy rights. </div>
+                <div className = 'spacing'>
+                  <button id="adviceHome" class = "button2 spacing"><a href="/pricing">Get Advice</a></button>
+                </div>
+                <div className='spacing has-text-weight-semibold is-size-4'> It's Just. That. Easy. </div>
+                <h3 className='has-text-weight-semibold is-size-2 spacing'> Who are we? </h3>
+                <img src='/img/community.png' alt = 'use case diagram' id = "homePageimage"/>
+                <div className='has-text-weight-semibold is-size-4'> We're a community of individuals frustrated by how confusing the law is. </div>
+                <div className='has-text-weight-semibold is-size-4'> We want to make the law more accessible by summarising it in plain English. </div>
+                <div className='has-text-weight-semibold is-size-4'> We don't provide binding legal advice, but instead a way to help you understand what you're already entitled to. </div>
+                <div className = 'spacing'>
+                  <button id="adviceHome" class = "button2 spacing"><a href="/about">FAQ</a></button>
+                </div>
+              </center>
+
+              <h3 className='spacing has-text-weight-semibold is-size-2'> <center> Sponsored By </center> </h3>
+              <center><a href = "https://www.bamlegal.co.uk"><img src='/img/bamlegal.jpg' alt = 'bamLegal logo' id = 'SponsorLogoHome'/></a></center>
             </div>
           </div>
         </div>
