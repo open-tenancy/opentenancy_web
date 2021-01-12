@@ -30,7 +30,7 @@ const ContributePageTemplate = ({
                                     <li>Contribute interviews coded in Docassemble</li>
                                 </ol>
                               </div>
-                            <h3 className='has-text-weight-semibold is-size-2'> Contribute Decision Trees </h3>
+                            <h3 className='has-text-weight-semibold is-size-2'> Contribute interviews coded in Docassemble </h3>
                             <center><img src='/img/decisiontrees.png' alt = 'legal decision trees'/></center>
                             <div className='spacing'>
                               <p className = 'spacingPara'> Absolutely no coding experience is needed to contribute decision trees or flowcharts. What we need is help turning the law in to flowcharts so that we can then code them up for our automated interview. </p>

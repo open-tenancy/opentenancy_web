@@ -16,7 +16,7 @@ const PricingPageTemplate = ({
     </Helmet>
     <div id = 'pageTitle'> Get Advice </div>
     <section className='section section--gradient' id='docassemble-section'>
-            <iframe id="docassemble" src="http://ec2-18-133-124-236.eu-west-2.compute.amazonaws.com/interview?i=docassemble.base%3Adata%2Fquestions%2Fdefault-interview.yml#page1" title="Open Tenancy"></iframe>
+            <iframe id="docassemble" src="https://interview.opentenancy.co.uk/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1" title="Open Tenancy"></iframe>
     </section>
   </div>
 )
