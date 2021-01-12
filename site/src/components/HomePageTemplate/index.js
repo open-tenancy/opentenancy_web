@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import PropTypes from 'prop-types'
+import { withPrefix, Link} from "gatsby"
 
 const HomePageTemplate = ({
   title,
@@ -29,9 +30,9 @@ const HomePageTemplate = ({
                   <div id = 'companyname'>
                       openTenancy
                   </div>
-                  <div id = "quote-message" className="is-size-3">
-                    Problems with your landlord?
-                  </div>
+                    <Helmet>
+                      <script src={withPrefix('quotes.js')} type="text/javascript"/>
+                    </Helmet>
                 </div>
               </div>
                 <div class="centered">

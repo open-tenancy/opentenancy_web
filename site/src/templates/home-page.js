@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
+import { withPrefix, Link} from "gatsby"
 
 const HomePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark

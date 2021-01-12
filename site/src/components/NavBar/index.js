@@ -31,6 +31,9 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               <Link className='navbar-item' to='/blog'>
                               Blog
               </Link>
+              <Link className='navbar-item' to='https://mailchi.mp/c6aaa91d8ea3/register'>
+                              Newsletter
+              </Link>
             </div>
           </div>
           <div class = "navbar-item has-dropdown is-hoverable is-hidden-touch">
@@ -88,6 +91,9 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                   </Link>
                   <Link className='navbar-item is-hidden-desktop' to='/sponsor'>
                                   Sponsor
+                  </Link>
+                  <Link className='navbar-item is-hidden-desktop' to='https://mailchi.mp/c6aaa91d8ea3/register'>
+                                  Newsletter
                   </Link>
                   <Link className='navbar-item is-hidden-desktop' to='https://www.buymeacoffee.com/opentenancy'>
                                   Buy Us a Byte
