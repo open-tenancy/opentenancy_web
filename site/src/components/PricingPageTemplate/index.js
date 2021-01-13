@@ -18,6 +18,9 @@ const PricingPageTemplate = ({
     <section className='section section--gradient' id='docassemble-section'>
             <iframe id="docassemble" src="https://interview.opentenancy.co.uk/interview?i=docassemble.openTenancy%3Adata%2Fquestions%2Fwelcome.yml#page1" title="Open Tenancy"></iframe>
     </section>
+    <div className = "centered spacing">
+      <button id="contact" class = "button2"><a href="https://forms.gle/yZEHtkVmQ5bE64Ku7">Give us Feedback</a></button>
+    </div>
   </div>
 )
 
