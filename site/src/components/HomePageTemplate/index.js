@@ -76,7 +76,7 @@ const HomePageTemplate = ({
                     </div>
                     <div class="column">
                       <center>
-                          <div className = 'has-text-weight-semibold is-size-4' id = "centerColumn"> Putting the law in the hands of the people who use it. </div>
+                          <div className = 'has-text-weight-semibold is-size-4' id = "centerColumn"> Making the law more accessible for those who need it. </div>
                       </center>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const HomePageTemplate = ({
                 <div className = 'has-text-weight-semibold is-size-4 ' id = "centerColumn"> Step one: Answer a questionnaire. </div>
                 <div className = 'has-text-weight-semibold is-size-4 ' id = "centerColumn"> Step two: Receive a document summarising your tenancy rights. </div>
                 <div className = 'spacing'>
-                  <button id="adviceHome" class = "button2 spacing"><a href="/pricing">Get Advice</a></button>
+                  <button id="adviceHome" class = "button is-warning spacing"><a href="/pricing">Get Advice</a></button>
                 </div>
                 <div className='spacing has-text-weight-semibold is-size-4'> It's Just. That. Easy. </div>
                 <h3 className='has-text-weight-semibold is-size-2 spacing'> Who are we? </h3>
@@ -94,7 +94,7 @@ const HomePageTemplate = ({
                 <div className='has-text-weight-semibold is-size-4'> We want to make the law more accessible by summarising it in plain English. </div>
                 <div className='has-text-weight-semibold is-size-4'> We don't provide binding legal advice, but instead a way to help you understand what you're already entitled to. </div>
                 <div className = 'spacing'>
-                  <button id="adviceHome" class = "button2 spacing"><a href="/about">FAQ</a></button>
+                  <button id="adviceHome" class = "button is-warning spacing"><a href="/about">FAQ</a></button>
                 </div>
               </center>
 
